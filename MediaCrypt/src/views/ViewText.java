@@ -144,7 +144,7 @@ public class ViewText extends javax.swing.JFrame {
                
                writer.flush();
                JOptionPane.showMessageDialog(this, 
-                       (isEncrypting? "Archivo cifrado" : "Archivo descifrado") + "guardado como: " + outputFile.getName(), "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                       (isEncrypting? "Archivo cifrado" : "Archivo descifrado") + " guardado como: " + outputFile.getName(), "Éxito", JOptionPane.INFORMATION_MESSAGE);
                
                 // Regresar a la vista principal
                this.setVisible(false);

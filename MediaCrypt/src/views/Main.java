@@ -95,7 +95,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnSelectExitActionPerformed
 
     private void BtnSelectImgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSelectImgActionPerformed
-        ViewText.getInstanceText().setVisible(true);
+        ViewImg.getInstanceText().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_BtnSelectImgActionPerformed
 

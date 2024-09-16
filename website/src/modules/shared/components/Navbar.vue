@@ -16,7 +16,7 @@
           </li>
 
           <li class="nav-item">
-            <router-link class="nav-link link-home">Archivos</router-link>
+            <router-link class="nav-link link-home" :to="{ name: 'Files' }">Archivos</router-link>
           </li>
           
         </ul>
@@ -28,8 +28,6 @@
       </div>
     </div><!--Container Navbar-->
   </nav>
-
-  
 </template>
 
 <script>

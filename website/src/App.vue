@@ -1,6 +1,4 @@
 <template>
-  <!-- <Navbar/>
-  <router-view/> -->
   <router-view name="navbar"></router-view>
   <router-view/>
 </template>
@@ -10,11 +8,6 @@ import { defineComponent, defineAsyncComponent } from 'vue';
 
 export default defineComponent({
   name: 'App',
-  components: {
-    // Navbar: defineAsyncComponent(() =>
-    //   import(/* webpackChunkName: "Navbar" */ '@/modules/shared/components/Navbar.vue')
-    // ),
-  },
 });
 </script>
 

@@ -4,7 +4,6 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'Home',
     components: {
-      default: () => import (/* webpackChunkName: "Home" */ '@/modules/shared/pages/AboutMe.vue'),
       navbar: () => import (/* webpackChunkName: "Navbar" */ '@/modules/shared/components/Navbar.vue'),
     }
   },
@@ -17,6 +16,15 @@ const routes: Array<RouteRecordRaw> = [
       navbar: () => import (/* webpackChunkName: "NavbarGlobal" */ '@/modules/shared/components/NavbarGlobal.vue')
     }
   },
+
+  {
+    path: '/files',
+    name: 'Files',
+    components: {
+      default: () => import (/* webpackChunkName: "Files" */ '@/modules/shared/pages/ViewFiles.vue'),
+      navbar: () => import (/* webpackChunkName: "NavbarGlobal" */ '@/modules/shared/components/NavbarGlobal.vue')
+    }
+  }
   
   // {
   //   path: '/about',

@@ -16,7 +16,7 @@
           </li>
 
           <li class="nav-item">
-            <router-link class="nav-link link-global">Archivos</router-link>
+            <router-link class="nav-link link-global" :to="{ name: 'Files' }">Archivos</router-link>
           </li>
           
         </ul>
@@ -43,7 +43,6 @@ export default {
   div .link-global {
     color: black;
     font-size: 25px;
-    font-weight: bold;
     width: 250px;
     border-radius: 10px;
   }

@@ -6,7 +6,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav montserrat-regular link-global__container">
+        <ul class="navbar-nav lilita link-global__container">
           <li class="nav-item">
             <router-link class="nav-link link-global" :to="{ name: 'Home' }">Inicio</router-link>
           </li>
@@ -43,8 +43,7 @@ export default {
   div .link-global {
     color: black;
     font-size: 25px;
-    width: 250px;
-    border-radius: 10px;
+    width: 400px;
   }
 
   div .link-global:hover {

@@ -10,9 +10,10 @@ import 'animate.css';
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faLock, faLaptopCode, faDatabase, faMicrochip, faFolder, faFile} from '@fortawesome/free-solid-svg-icons'
+import { faLock, faLaptopCode, faDatabase, faMicrochip, faFolder, faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faGithub, faGoogle } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faLock, faLaptopCode, faDatabase, faMicrochip, faFolder, faFile)
+library.add(faLock, faLaptopCode, faDatabase, faMicrochip, faFolder, faFile, faFacebook, faGithub, faGoogle, faEnvelope)
 
 createApp(App)
   .component('font-awesome-icon', FontAwesomeIcon)

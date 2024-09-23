@@ -32,6 +32,10 @@
         </li>
       </ul>
     </div>
+
+    <div v-else>
+      <h2 class="montserrat-bold">No hay archivos disponibles aún</h2>
+    </div>
   </div>
 </template>
 
@@ -41,11 +45,11 @@ import { mostrarAlertaError } from '@/helpers/alert';
 export default {
   data() {
     return {
-      tree: {
-        name: 'uploads',
-        type: 'directory',
-        children: []
-      },
+      // tree: {
+      //   name: 'uploads',
+      //   type: 'directory',
+      //   children: []
+      // },
       currentPath: 'uploads', // Ruta actual
       pathHistory: [],        // Historial de rutas
       apiURL: process.env.VUE_APP_WEBSERVICE_URL
@@ -60,7 +64,7 @@ export default {
         const data = await response.json();
         this.tree = data.files;
       } catch (error) {
-        mostrarAlertaError('No se pudo obtener los directorios');
+        // mostrarAlertaError('No se pudo obtener los directorios');
       }
     },
 

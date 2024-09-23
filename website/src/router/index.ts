@@ -24,6 +24,15 @@ const routes: Array<RouteRecordRaw> = [
       default: () => import (/* webpackChunkName: "Files" */ '@/modules/shared/pages/ViewFiles.vue'),
       navbar: () => import (/* webpackChunkName: "NavbarGlobal" */ '@/modules/shared/components/NavbarGlobal.vue')
     }
+  },
+
+  {
+    path: '/cv',
+    name: 'CV',
+    components: {
+      default: () => import (/* webpackChunkName: "CV" */ '@/modules/shared/pages/ViewFiles.vue'),
+      navbar: () => import (/* webpackChunkName: "NavbarGlobal" */ '@/modules/shared/components/NavbarGlobal.vue')
+    }
   }
   
   // {

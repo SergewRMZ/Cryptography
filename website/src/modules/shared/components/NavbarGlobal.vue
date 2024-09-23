@@ -18,6 +18,14 @@
           <li class="nav-item">
             <router-link class="nav-link link-global" :to="{ name: 'Files' }">Archivos</router-link>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link link-global" href="/CV_Serge_Eduardo.pdf" download="CV_Serge_Eduardo.pdf">Mi CV</a>
+          </li>
+
+          <li class="nav-item">
+            <router-link class="nav-link link-global" :to="{ path: '#' }">Mi Llave Pública</router-link>
+          </li>
           
         </ul>
       </div>
@@ -43,7 +51,7 @@ export default {
   div .link-global {
     color: black;
     font-size: 25px;
-    width: 400px;
+    width: 200px;
   }
 
   div .link-global:hover {
